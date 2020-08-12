@@ -1,24 +1,13 @@
 import React from 'react';
 import Hello from './Hello';
-import './App.css';
+import Wrapper from './Wrapper';
 
 function App() {
-  const name = 'react';
-  const style = {
-    backgroundColor: 'black',
-    color: 'aqua',
-    fontSize: 24,
-    padding: '1rem'
-  };
   return (
-    <>
-      {/* 주석입니다. */}
-      <Hello />
-      <div 
-        // 또는 이렇게
-        style={style}>{name}</div>
-      <div className="gray-box"></div>
-    </>
+  <Wrapper>
+    <Hello name="react" color="red" isSpecial /> {/* isSpecial값을 true로 주지않아도 truty한 값으로 친다 */}
+    <Hello color="pink" />
+  </Wrapper>
   );
 }
 
