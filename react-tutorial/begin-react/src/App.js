@@ -1,14 +1,10 @@
 import React from 'react';
-import Hello from './Hello';
-import Wrapper from './Wrapper';
+import Counter from './Counter';
 
 function App() {
   return (
-  <Wrapper>
-    <Hello name="react" color="red" isSpecial /> {/* isSpecial값을 true로 주지않아도 truty한 값으로 친다 */}
-    <Hello color="pink" />
-  </Wrapper>
+  <Counter />
   );
 }
-
+ 
 export default App;
